@@ -13,7 +13,7 @@ public class ejecucion_dao {
 
     @Id
     private int Num_orden;
-    private float valor_oden;
+    private float valor_orden;
     private Calendar fecha_asignacion;
     private String actividad;
     private String nombre_sitio;
@@ -25,11 +25,11 @@ public class ejecucion_dao {
 
     }
 
-    public ejecucion_dao(int Num_orden, float valor_oden, Calendar fecha_asignacion,
+    public ejecucion_dao(int Num_orden, float valor_orden, Calendar fecha_asignacion,
             String actividad, String nombre_sitio, Calendar fecha_instalacion, Calendar fecha_integracion,
             Calendar fecha_documentacion) {
         this.Num_orden = Num_orden;
-        this.valor_oden = valor_oden;
+        this.valor_orden = valor_orden;
         this.fecha_asignacion = fecha_asignacion;
         this.actividad = actividad;
         this.nombre_sitio = nombre_sitio;
@@ -43,7 +43,7 @@ public class ejecucion_dao {
     public String toString() {
         String base_ejecucion = "-------------------------------\n";
         base_ejecucion += "Num_orden: " + Num_orden;
-        base_ejecucion += "\nvalor_orden: " + valor_oden;
+        base_ejecucion += "\nvalor_orden: " + valor_orden;
         base_ejecucion += "\nfecha_asignacion: " + fecha_asignacion;
         base_ejecucion += "\nactividad: " + actividad;
         base_ejecucion += "\nnombre_sitio: " + nombre_sitio;
@@ -59,8 +59,8 @@ public class ejecucion_dao {
         return Num_orden;
     }
 
-    public float getValor_oden() {
-        return valor_oden;
+    public float getValor_orden() {
+        return valor_orden;
     }
 
     public Calendar getFecha_asignacion() {
@@ -88,8 +88,8 @@ public class ejecucion_dao {
     }
 
     // modificadores
-    public void setValor_oden(float valor_oden) {
-        this.valor_oden = valor_oden;
+    public void setValor_orden(float valor_orden) {
+        this.valor_orden = valor_orden;
     }
 
     public void setFecha_asignacion(Calendar fecha_asignacion) {

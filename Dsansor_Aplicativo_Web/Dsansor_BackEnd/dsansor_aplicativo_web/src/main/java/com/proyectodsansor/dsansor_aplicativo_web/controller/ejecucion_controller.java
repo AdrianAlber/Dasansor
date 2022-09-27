@@ -15,10 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.proyectodsansor.dsansor_aplicativo_web.model.ejecucion_dao;
 import com.proyectodsansor.dsansor_aplicativo_web.service.ejecucion_service;
 
+@CrossOrigin(origins = "http://localhost", maxAge = 3600)
 @RestController
 @RequestMapping("/ejecucion")
 public class ejecucion_controller {
     // Atributos
+
     ejecucion_service service;
 
     // Constructor

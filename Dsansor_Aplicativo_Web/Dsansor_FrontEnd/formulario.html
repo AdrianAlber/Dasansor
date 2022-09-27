@@ -11,6 +11,7 @@
     <script src="./css/bootstrap.bundle.min.js"></script>
     <script src="./css/popper.min.js"></script>
     <script src="./css/bootstrap.min.js"></script>
+    <script src="./js/functions.js"></script>
     <!-- Estilos locales-->
 
     <link rel="stylesheet" type="text/css" href="./css/formulario.css">
@@ -24,10 +25,10 @@
         <div class="conte_menu">
             <nav class="menu">
                 <ul class="menu__lista">     
-                     <li> <a class="active" href="index.html">Inicio</a></li>
-                     <li><a href="servicios.html">Servicios</a></li>
-                     <li><a href="contacto.html">Contacto</a></li>
-                     <li><a href="login.html">Login</a></li>
+                    <li> <a class="active" href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -75,14 +76,16 @@
                     </div>
                 </div>
                 <div class="elemento-boton">
-                    <button class="buton" type="submit">Guardar todo</button>
+
+                <button onclick="getInfo()">Guardar todo</button>  
+
                 </div>
             </form>
         </div>
         <br>
         <div class="tabla1">
             <table id="transactionTable">
-                <tr>
+            <!-- <tr>
                     <td>Número de orden</td>
                     <td>Monto</td>
                     <td>F. asignación</td>
@@ -91,9 +94,20 @@
                     <td>F. instalación</td>
                     <td>F. integración</td>
                     <td>F. documentiación</td>
-                </tr>
+                </tr>  -->
             </table>
+
+            <!--  <div class="elemento-boton"> -->
+                    
+                <button onclick="getInfo()">Consultar datos</button> <br><br>
+                <p id="showData"></p>
+    
+            </div>
         </div>
+
+
+        
+
     </div>
     <footer>
         <div>
@@ -103,6 +117,7 @@
         </div>
     </div>
     </footer>
-    <script src="./js/script.js"></script>
+<!-- <script src="./js/script.js"></script>   -->
+    <script src="./js/functions.js"></script>
 </body>
 </html>
