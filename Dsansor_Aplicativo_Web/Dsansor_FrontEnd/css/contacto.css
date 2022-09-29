@@ -1,6 +1,7 @@
 *{
     font-family: Tahoma;
-    color: #000080
+	color: #000080;
+
 }
 html{
     height: 100%;
@@ -11,7 +12,7 @@ body{
     padding: 0;
 	background-color: #DDD4D4;
 }
-
+/*Configuracion general del header*/
 header{
 	width: 100%;
 	display: flex;
@@ -53,16 +54,38 @@ header{
 }
 /*Cambiar color de fondo y color de letra*/
 .menu__lista li a:hover{
+	border: 1px solid #111654;
+	border-radius: 10px;
     background-color: white;
     color: #0B0E32;
 }
 
 /*contenedor*/
 .principal{
+    width: 93%;
     display: flex;
-	width: 100%;
-	background: #DDD4D4;
-	background: rgb(219, 222, 234 .0);
+    margin: 20px 20px;
+    padding: 20px;;
+    background: white;
+    border: 2px solid #111654 ;
+    border-radius: 10px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.contenedor{
+	display: inline-block;
+    background: white;
+    width: 450px;
+    height: 700px;
+    padding: 30px;
+}
+.contenedor1{
+	display: inline-block;
+    margin: 20px auto;
+	width: 600px;
+    height: 720px;
+    padding: 20px;	
+    background: white;
 }
 
 .contenedor img{
@@ -70,58 +93,26 @@ header{
     margin: auto;
     border-radius: 10px;
 }
-
-.contenedor{
-	display: inline-block;
-    background: white;
-    margin: 15px auto;
-    width: 450px;
-    height: 700px;
-    padding: 30px;
-    background: rgb(219, 222, 234 .0);
-    border: 2px solid #111654 ;
-    border-radius: 10px;
-}
-.contenedor1{
-	display: inline-block;
-    margin: 20px auto;
-	width: 600px;
-    height: 700px;
-    padding: 20px;	
-    background: white;
-    background: rgb(219, 222, 234 .0);
-    border: 2px solid #111654 ;
-    border-radius: 10px;
-}
-
-.contenedor h1{
+h1{
     margin: 0 0 30px;
     padding: 0;
     font-size: 35px;
-    color: #000080;
     text-align: center;
 }
-.contenedor1 h1{
-    margin: 0 0 30px;
-    padding: 0;
-    font-size: 30px;
-    color: #000080;
-    text-align: center;
-}
-.contenedor1 h3{
+
+h3{
+    text-align: justify;
     margin: 0 0 30px;
     padding: 0;
     font-size: 25px;
-    color: #000080;
 }
 
 .contenedor h6{
-	color: #000080;
     text-align:justify;
 
 }
+
 .contenedor .elemento label{
-    color: #000080;
     font-size: 18px;
 }
 .contenedor .elemento input{
@@ -134,7 +125,7 @@ header{
 }
 .contenedor .elemento select{
 	width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     background: #D9D9D9;
     border-radius: 6px;
     border-bottom: 1px solid #0B0E32;
@@ -148,11 +139,12 @@ header{
 
 }
 .contenedor .elemento textarea{
+    resize: none;
 	width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     background: #D9D9D9;
     border-radius: 6px;
-    border-bottom: 1px solid #0B0E32;
+    border-bottom: 2px solid #0B0E32;
 }
 
 .contenedor .elemento input[type="submit"]{
@@ -170,7 +162,6 @@ header{
 	justify-content: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
-
 }
 
 .buton{
@@ -181,7 +172,6 @@ header{
 	color: white;
 	border-radius: 6px;
     border-bottom: 1px solid #0B0E32;
-
 }
 
 .redes{

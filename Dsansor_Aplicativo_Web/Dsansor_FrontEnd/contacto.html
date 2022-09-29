@@ -6,19 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Normalizacion-->
 	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-    <!--CDN de boostrap-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="./css/bootstrap.bundle.min.js"></script>
-    <script src="./css/popper.min.js"></script>
-    <script src="./css/bootstrap.min.js"></script>
     <!-- Estilos locales-->
     <link rel="stylesheet" type="text/css" href="./css/contacto.css">
+    <link rel="icon" href=".//Imagenes/logo/fa.ico">
     <title>Contacto</title>
 </head>
 <body>
+    <!--El header o encabezado-->
     <header>
         <div class="conte_img">
-            <a href="Index.html"><img src="./Imagenes/Logo4.jpeg" alt="" width="180px;"></a>
+            <a href="Index.html"><img src="./Imagenes/logo/Logo4.jpeg" alt="" width="180px;"></a>
         </div>
         <div class="conte_menu">
             <nav class="menu">
@@ -31,22 +28,26 @@
             </nav>
         </div>
     </header>
+    <!--Div que contiene el formulario-->
     <div class="principal">
         <div class="contenedor">
-            <img  src="Imagenes/Logo2.jpg"/><br>
+            <img  src="./Imagenes/logo/Logo2.jpg"/><br>
             <h1>Formulario de contacto</h1>
             <h6>Complete el siguiente formulario con su solicitud  y una persona de nuestro equipo, se pondrá en contacto con usted.</h6><br>
-
-            <form id="forma" name="forma" method="post">
+            <!--formulario-->
+            <form id="forma" name="forma" action="https://formspree.io/f/mpzndajz"
+            method="POST">
+                <!--Nombres y apellidos-->
                 <div class="elemento">
-                    <label for="nombre">Nombres y apellidos<span class="obligatorio">*</span></label>
-                    <input type="text" id="nombre" placeholder ="Digite su Nombre" name="nombre" required="true"/>
+                    <label for="name"></span></label>
+                    <input type="text" id="name" placeholder ="Nombre y apellidos *" name="name" required="true"/>
                 </div>
-
+                <!--Email-->
                 <div class="elemento">
-                    <label for="email">Correo electronico<span class="obligatorio">*</span></label>
-                    <input type="email" id="email" name="email" placeholder ="Digite su @ correo " required="true"/>
+                    <label for="email"></span></label>
+                    <input type="email" id="email" name="email" placeholder ="Digite su email * " required="true"/>
                 </div>
+                <!--El header o encabezado
                 <div class="elemento">
                     <label for="servicios">Seleccione el servicio<span class="obligatorio">*</span></label><br/>
                     <select name="servicios" id="servicios">
@@ -55,23 +56,23 @@
                         <option value="ampliacion de redes moviles">Ampliación de redes moviles</option>
                         <option value="instalacion de obras civiles menores">Instalación de obras civiles menores</option>
                     </select>
-                </div><br/>
+                </div><br/>-->
                 <div class="elemento">
-                    <label for="mensaje">Deje su mensaje<span class="obligatorio">*</span></label>
-                     <textarea id="mensaje" name="mensaje"  rows="3" cols="60" placeholder ="Escriba su mensaje"     required="true"></textarea>
+                    <label for="messaje"></label>
+                     <textarea id="messaje" name="messaje"  rows="8" cols="60" placeholder ="Deje su Mensaje *" required="true"></textarea>
                 </div>
                 <div class="elemento1">
                     <button class="buton" type="submit">Enviar</button>
                 </div>
             </form>
         </div>
-
+        <!--redes sociales y mapa-->
         <div class="contenedor1">
             <h1>Redes Sociales</h1>
             <p class="redes">
-                <a href="https://www.facebook.com/" target="_blank"><img src="./Imagenes/face.png" width="50px;" alt=""></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="./Imagenes/insta.png" width="40px;" alt=""></a>
-                <a href="https://www.linkedin.com/" target="_blank"><img src="./Imagenes/link.png" width="40px;" alt=""></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./Imagenes/redes/face.png" width="50px;" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="./Imagenes/redes/insta.png" width="40px;" alt=""></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="./Imagenes/redes/link.png" width="40px;" alt=""></a>
                 
             </p>
             <h3>Encuentranos</h3>

@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Normalizacion-->
-	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	  <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <!--CDN de boostrap-->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <!-- Estilos locales-->
     <link rel="stylesheet" type="text/css" href="./css/servicios.css">
+    <link rel="icon" href=".//Imagenes/logo/fa.ico">
     <title>Servicios</title>
 </head>
 <body>
     <header>
         <div class="conte_img">
-            <a href="Index.html"><img src="./Imagenes/Logo4.jpeg" alt="" width="180px;"></a>
+            <a href="Index.html"><img src="./Imagenes/logo/Logo4.jpeg" alt="" width="180px;"></a>
         </div>
         <div class="conte_menu">
             <nav class="menu">
@@ -32,50 +33,26 @@
     <div class="contenedor">
         <h1>Nuestros servicios</h1>
     </div>
-    <!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Indicators/dots -->
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-    </div>
-    
-    <!-- The slideshow/carousel -->
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <img src="./Imagenes/instalacion.jpg" alt="instalacion" class="d-block" style="width:100%">
-        <figcaption></figcaption>
-      </div>
-      <p>Instalación de nuevos sitios</p>
-
-      <div class="carousel-item">
-        <img src="./Imagenes/modernizacion .jpeg" alt="modernizacion" class="d-block" style="width:100%">
-        
-      </div>
-      <!-- <p>Modernización de estaciones</p>-->
-      <div class="carousel-item">
-        <img src="./Imagenes/ampliacion.jpg" alt="ampliacion" class="d-block" style="width:100%">
-      </div>
-      <!-- <p>Ampliación de redes moviles</p>-->
-      <div class="carousel-item">
-        <img src="./Imagenes/obra.jpg" alt="obra" class="d-block" style="width:100%">
-      </div>
-      <!-- <p>Instalación de obras civilies menores</p>-->
-    </div>
-    
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-  
+    <div class="divServicios">
+        <div class="divContImagenes">
+            <div class="divImg">
+                <img class="imgServ" id="pic1" src="./Imagenes/servicios/instalacion.jpg" alt="" >
+                <h3 class="tipSer" id="tit1">Instalación de nuevos sitios</h3>
+            </div>
+            <div class="divImg">
+                <img class="imgServ"  id="pic2" src="./Imagenes/servicios/modernizacion.jpg" alt="" >
+                <h3 class="tipSer" id="tit2">Modernización de estaciones</h3>
+            </div>
+            <div class="divImg">
+                <img class="imgServ"  id="pic3" src="./Imagenes/servicios/ampliacion.jpg" alt="" >
+                <h3 class="tipSer" id="tit3">Ampliación de redes moviles</h3>
+            </div>
+            <div class="divImg">
+                <img class="imgServ" id="pic4" src="./Imagenes/servicios/obras.jpg" alt="" >
+                <h3 class="tipSer" id="tit4">Instalación de obras civiles menores</h3>
+            </div>
+        </div>
+    </div>  
     <footer>
         <div>
             <p class="footer">
